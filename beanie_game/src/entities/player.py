@@ -6,8 +6,8 @@ from beanie_game.config.config import PLAYER_LAYER, TILE_SIZE, PLAYER_SPEED
 
 # todo: create a list of sprite sheets here with relevant info such as columns and pertinent ids
 pygame.mixer.init()
-test_sound = pygame.mixer.Sound("/Users/sgreen/PycharmProjects/PythonProject1/beanie_game/assets/generic/minecraft-villager-289282.mp3")
-test_sound.set_volume(0.5)
+# test_sound = pygame.mixer.Sound("../../../beanie_game/assets/generic/minecraft-villager-289282.mp3")
+# test_sound.set_volume(0.5)
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, engine, x, y):
@@ -122,7 +122,7 @@ class Player(pygame.sprite.Sprite):
         if direction == 'x':
             hits = pygame.sprite.spritecollide(self, self.engine.blocks, False)
             if hits:
-                pygame.mixer.Sound.play(test_sound)
+                # pygame.mixer.Sound.play(test_sound)
                 # if we're moving right, and colliding, we put the character next to the block we collided with
                 if self.x_change > 0:
                     print("x right")
