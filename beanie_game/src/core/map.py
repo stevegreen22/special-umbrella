@@ -45,7 +45,8 @@ class Map:
         if stage == "start":
             # map_filename='/Users/sgreen/PycharmProjects/PythonProject1/beanie_game/assets/maps/newmaptest.tmx'
             # map_filename='/Users/sgreen/PycharmProjects/PythonProject1/beanie_game/assets/maps/starting_area.tmx'
-            map_filename = 'C:\\Users\steve\PycharmProjects\special-umbrella\\beanie_game\\assets\maps\\area1_withobjects.tmx'
+            # map_filename = 'C:\\Users\steve\PycharmProjects\special-umbrella\\beanie_game\\assets\maps\\area1_withobjects.tmx'
+            map_filename = 'C:\\Users\steve\PycharmProjects\special-umbrella\\beanie_game\\assets\maps\\area_1_main.tmx'
             tiled_map = load_pygame(map_filename)
             return tiled_map
         else:
